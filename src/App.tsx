@@ -48,7 +48,7 @@ function FormExample() {
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group as={Col} md="4" controlId="validationFormik02">
-                  <Form.Label>Last name</Form.Label>
+                  <Form.Label>Last name test</Form.Label>
                   <Form.Control
                       type="text"
                       name="lastName"
