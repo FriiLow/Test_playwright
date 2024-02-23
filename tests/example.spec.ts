@@ -47,15 +47,6 @@ test('Go yuginews', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Résultats de recherche pour:' })).toBeVisible();
 });
 
-test('Abonne toi bro!!', async ({ page }) => {
-  await page.goto('https://yuginews.fr/');
-  await page.locator('#et-menu #et-search-icon').click();
-  await page.getByRole('searchbox', { name: 'Rechercher:' }).click();
-  await page.getByRole('searchbox', { name: 'Rechercher:' }).fill('dragon');
-  await page.getByRole('button', { name: '' }).click();
-  await expect(page.getByRole('heading', { name: 'Résultats de recherche pour:' })).toBeVisible();
-});
-
 test('Auto commande carte', async ({ page }) => {
   await page.goto('https://www.cardmarket.com/fr/YuGiOh');
   await page.getByPlaceholder('Rechercher Cardmarket...').click();
